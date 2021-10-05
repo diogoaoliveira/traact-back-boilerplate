@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  sql-db:
+    image: postgres
+    environment:
+      POSTGRES_DB: traact-local
+      POSTGRES_USER: traact
+      POSTGRES_PASSWORD: 'Traact@Local'
+      PG_DATA: /var/lib/postgresql/data
+    ports:
+      - '5432:5432'
